@@ -16,11 +16,21 @@ const newArrayReduced = formatedArrays.map(formatedArray => {
     return sum
 })
 
-// // sort methode
-// const maxNum = newArrayReduced.sort((a, b) => b - a)[0]
+let sumthird = 0
 
+
+
+// // sort methode
+const maxNum = newArrayReduced.sort((a, b) => b - a)
+
+for (let i = 0; i < 3 ; i++) {
+  sumthird += maxNum[i]
+  console.log(`number ${i}`, maxNum[i])
+}
+
+console.log(sumthird)
 // Math.max methode
-console.log(Math.max(...newArrayReduced))
+// console.log(Math.max(...newArrayReduced))
 
 
 
